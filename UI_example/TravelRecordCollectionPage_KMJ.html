@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <!-- HTML link 태그를 활용한 BootStrap 연동 -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for template -->
+    <link href="./css/headers.css" rel="stylesheet">
+    <style>
+      #additionalContent {
+        background-color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+      }
+
+      #additionalContent img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="./home.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-4">프로젝트명</span>
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">여행계획</a></li>
+          <li><a href="#" class="nav-link px-2">여행기록</a></li>
+          <li><a href="#" class="nav-link px-2">여행정보</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2">로그인</button>
+          <button type="button" class="btn btn-primary">회원가입</button>
+        </div>
+      </header>
+    </div>
+
+    <div id="additionalContent">
+      <img src="사진 주소" alt="사진">
+      <p>여행 기록 모음 페이지</p>
+      <p>여러 여행 기록들을 한 번에 모아보세요!</p>
+    </div>
+
+    <div class="container">
+      <div class="container">
+        <button class="btn btn-primary d-inline-flex align-items-center" type="button">
+          새 기록 생성
+          <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"/></svg>
+        </button>
+      </div>
+      <div class="container">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+      </div>
+    </div>
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목1</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">삭제</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목2</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">편집</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목3</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">편집</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목4</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">편집</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목5</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">편집</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목6</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">편집</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목7</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">편집</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목8</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">편집</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">기록 제목9</p>
+                <p class="card-location">장소 : (장소변수값)</p>
+                <p class="card-date">날짜 : 202x-xx-xx~xx-xx</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">조회</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">수정</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">편집</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p>(메모)카드 갤러리/리스트 중 선택하려면 자바스크립트, 프레임워크 동적 구성 필요</p>
+    <div class = "list-show-area">
+    <div class="list">
+          <div class="container">
+            <div class="card shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">제목</h5>
+                    <p class="card-location">장소</p>
+                    <p class="card-date">날짜</p>
+                    <p class="card-text">상세 여행 요약 정리</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="썸네일 이미지 주소" alt="썸네일 이미지" class="card-img-top">
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4"></div>
+
+    <div class="list">
+      <div class="container">
+        <div class="card shadow-sm">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">제목</h5>
+                <p class="card-location">장소</p>
+                <p class="card-date">날짜</p>
+                <p class="card-text">상세 여행 요약 정리</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="썸네일 이미지 주소" alt="썸네일 이미지" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4"></div>
+
+    <div class="list">
+      <div class="container">
+        <div class="card shadow-sm">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">제목</h5>
+                <p class="card-location">장소</p>
+                <p class="card-date">날짜</p>
+                <p class="card-text">상세 여행 요약 정리</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="썸네일 이미지 주소" alt="썸네일 이미지" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4"></div>
+
+    <div class="list">
+      <div class="container">
+        <div class="card shadow-sm">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">제목</h5>
+                <p class="card-location">장소</p>
+                <p class="card-date">날짜</p>
+                <p class="card-text">상세 여행 요약 정리</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="썸네일 이미지 주소" alt="썸네일 이미지" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4"></div>
+  </body>
+
+  <div class="list">
+    <div class="container">
+      <div class="card shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">제목</h5>
+              <p class="card-location">장소</p>
+              <p class="card-date">날짜</p>
+              <p class="card-text">상세 여행 요약 정리</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="썸네일 이미지 주소" alt="썸네일 이미지" class="card-img-top">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4"></div>
+
+  <div class="list">
+    <div class="container">
+      <div class="card shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">제목</h5>
+              <p class="card-location">장소</p>
+              <p class="card-date">날짜</p>
+              <p class="card-text">상세 여행 요약 정리</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="썸네일 이미지 주소" alt="썸네일 이미지" class="card-img-top">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4"></div>
+  </div>
+
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container d-flex justify-content-center align-items-center">
+      <span class="text-muted">여행 기록 웹프로젝트 &copy; 2023</span>
+    </div>
+  </footer>
+
+  </body>
+  </body>
+</html>
