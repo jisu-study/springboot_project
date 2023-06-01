@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><h1> 여행 기록 작성/수정 페이지 </h1></title>
+    </head>
+
+    <body>
+        <header id="header">
+            <nav class="navbar">
+                <div class = "content">
+                    <div class="main_logo">
+                        <a href="/"> Project Name(go to "index.html")</a>
+                    </div>
+                    <div class="left_navbar_menu">
+                        <ul>
+                            <li><a href="/"> 여행 계획 </a></li>
+                            <li><a href="/"> 여행 기록</a></li>
+                            <li><a href="/"> 여행 정보 </a></li>
+                            <li><a href="/"> 로그인/로그아웃</a></li>                            
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <form id="report-form">
+            <label for="title">글 제목:</label>
+            <input type="text" id="title" name="title" placeholder="제목을 입력하세요(필수)">
+          
+            <br>
+          
+            <label for="location">장소:</label>
+            <input type="text" id="location" name="location" placeholder="장소를 입력하세요">
+          
+            <label for="start_date"> 시작 날짜:</label>
+            <input type="date" id="start_date" name="start_date">
+            <label for="end_date"> 종료 날짜:</label>
+            <input type="date" id="end_date" name="end_date">            
+          
+            <br>
+
+            <div class= "charge_table">
+                <table id="food_charge"> 식비
+                    <thead>
+                    <tr>
+                        <th>세부사항</th>
+                        <th>금액</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table id="room_charge"> 숙소
+                    <thead>
+                    <tr>
+                        <th>세부사항</th>
+                        <th>금액</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table id="trans_charge"> 교통
+                    <thead>
+                    <tr>
+                        <th>세부사항</th>
+                        <th>금액</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    </tbody>
+                </table>        
+                
+                <table id="other_charge"> 기타
+                    <thead>
+                    <tr>
+                        <th>세부사항</th>
+                        <th>금액</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    </tbody>
+                </table>            
+            </div>
+
+
+            <button id="toggle-button">DAY1</button>
+
+            <div id="day-container">
+              <div class="toggleable-content">
+                <h2>Day1</h2>
+                <input type="text" placeholder="day1의 기록">
+                <br>
+                <input type="file" accept="image/*">
+                <img id="preview-image" src="#" alt="미리보기">
+              </div>
+            </div>            
+
+            <button id="save-button">임시 저장</button>        
+            <button type="submit">저장</button>
+        </form>
+
+        <br>
+
+        <footer>
+            <div class="footer-container">
+              <img src="이미지-경로" alt="로고 이미지">
+              <p>저작권 © 2023 회사명. All rights reserved.</p>
+            </div>
+        </footer>          
+
+
+        <script>
+            document.getElementById('report-form').addEventListener('submit', function(event) {
+              event.preventDefault(); // 폼 전송 기본 동작 방지
+          
+              var title = document.getElementById('title').value;
+              var location = document.getElementById('location').value;
+              var start_date = document.getElementById('start_date').value;
+              var end_date = document.getElementById('end_date').value;
+          
+              var data = {
+                title: title,
+                location: location,
+                start_date: start_date,
+                end_date: end_date
+              };
+          
+              // API를 통해 데이터를 백엔드로 전송
+              fetch('/api/report/create', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+              })
+              .then(function(response) {
+                // 응답 처리
+                if (response.ok) {
+                  console.log('게시글이 성공적으로 저장되었습니다.');
+                  // 추가로 필요한 동작 수행
+                } else {
+                  console.error('게시글 저장 중에 오류가 발생했습니다.');
+                }
+              })
+              .catch(function(error) {
+                console.error('네트워크 오류:', error);
+              });
+            });
+        </script>
+        
+    </body>
+
+
+</html>
