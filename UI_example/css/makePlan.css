@@ -1,0 +1,62 @@
+#wrapper {
+    display: grid;
+    grid-template-rows: 200px 1000px;
+}
+
+#headwrapper {
+    display: grid;
+    grid-template-columns: 250px 650px 250px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+#head_mid {
+    background-color: black;
+}
+
+#project_name {
+    background-color: aquamarine;
+}
+
+#log {
+    background-color: blue;
+}
+
+#bodywrapper {
+    display: grid;
+    grid-template-columns: 250px 650px 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#left_body {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+#mid_body {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#right_body {
+    background-color: burlywood;
+    text-align: center;
+}
+
+.D1_root {
+    background-color: brown;
+    margin-bottom: 10px;
+}
+
+#trip_table {
+    width: 650px;
+}
+
+#cost {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+}
