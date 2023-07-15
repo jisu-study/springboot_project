@@ -1,0 +1,25 @@
+.placeholder {
+        display: inline-block;
+        width: 300px;
+        height : 200px;
+}
+.fixed-bottom {
+        position: fixed;
+        bottom: 0;
+    }
+
+.description{
+        background-color: lightblue;
+          font-style: italic;
+        color : darkblue;
+}
+
+.fixed-bottom-wrapper {
+  position: fixed;
+  bottom: 20px; /* 버튼이 하단에서 20px의 간격을 유지합니다 */
+  right: 10%; /* 버튼을 가운데로 정렬합니다 */
+  transform: translateX(-50%); /* 가운데 정렬을 조정합니다 */
+}
+.empty-space {
+  margin-bottom: 20px; /* 원하는 만큼의 빈 공간을 설정합니다 */
+}
